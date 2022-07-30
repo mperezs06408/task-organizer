@@ -1,0 +1,24 @@
+nav {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    background-image: url('../img/magnifying-glass-solid.svg');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: invert(37%) sepia(25%) saturate(955%) hue-rotate(261deg) brightness(86%) contrast(92%);
+    width: 36px;
+    height: 36px;
+}
+
+.search-input {
+    font-size: 1.5em;
+    text-indent: 36px;
+    line-height: 1.5;
+    width: 340px;
+    border: 1px solid var(--purple);
+    border-radius: 50px;
+    margin-bottom: 1em;
+}

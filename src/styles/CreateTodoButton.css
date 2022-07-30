@@ -1,0 +1,17 @@
+.btn-add {
+    background-image: url('../img/circle-plus-solid.svg');width: 90px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--white);
+    height: 90px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 50%;
+    transition: transform .5s;
+}
+
+.btn-add:focus {
+    transform: rotate(90deg);
+}

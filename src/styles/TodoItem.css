@@ -1,0 +1,54 @@
+.list-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: var(--white);
+    min-height: 60px;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+.list-item_checked,
+.list-item_remove {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: invert(9%) sepia(11%) saturate(4125%) hue-rotate(210deg) brightness(95%) contrast(91%);
+    width: 10%;
+    margin:auto 0;
+}
+
+.list-item_checked {
+    left:0;
+    width: 30px;
+    height: 30px;
+    background-image: url('../img/circle-check-solid.svg');
+    transition: all .5s ease;
+}
+
+.list-item_remove {
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url('../img/trash-can-solid.svg');
+}
+
+
+.list-item_content {
+    word-break: break-all;
+    width: 80%;
+    padding: 10px 5px;
+    transition: font-style .8s ease;
+}
+
+.checked-text {
+    font-style: italic;
+    text-decoration: line-through;
+}
+
+.checked-span {
+    filter: invert(70%) sepia(35%) saturate(352%) hue-rotate(314deg) brightness(101%) contrast(83%);
+}
