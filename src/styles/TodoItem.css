@@ -25,7 +25,7 @@
     left:0;
     width: 30px;
     height: 30px;
-    background-image: url('../img/circle-check-solid.svg');
+    background-image: url('../../public/circle-check-solid.svg');
     transition: all .5s ease;
 }
 
@@ -33,7 +33,7 @@
     right: 0;
     width: 30px;
     height: 30px;
-    background-image: url('../img/trash-can-solid.svg');
+    background-image: url('../../public/trash-can-solid.svg');
 }
 
 
