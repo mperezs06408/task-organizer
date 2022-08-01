@@ -18,14 +18,14 @@
     background-repeat: no-repeat;
     filter: invert(9%) sepia(11%) saturate(4125%) hue-rotate(210deg) brightness(95%) contrast(91%);
     width: 10%;
-    margin:auto 0;
+    margin:auto 5px;
 }
 
 .list-item_checked {
     left:0;
     width: 30px;
     height: 30px;
-    background-image: url('../../public/circle-check-solid.svg');
+    background-image: url('../../../public/circle-check-solid.svg');
     transition: all .5s ease;
 }
 
@@ -33,7 +33,7 @@
     right: 0;
     width: 30px;
     height: 30px;
-    background-image: url('../../public/trash-can-solid.svg');
+    background-image: url('../../../public/trash-can-solid.svg');
 }
 
 

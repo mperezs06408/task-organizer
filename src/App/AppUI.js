@@ -2,11 +2,11 @@ import React from 'react';
 /** Root Styles **/
 import './App.css';
 /** Components **/
-import { TodoCounter } from '../components/TodoCounter';
-import { TodoSearch } from '../components/TodoSearch';
-import { TodoList } from '../components/TodoList';
-import { TodoItem } from '../components/TodoItem';
-import { CreateTodoButton } from '../components/CreateTodoButton';
+import { TodoCounter } from '../components/TodoCounter/TodoCounter';
+import { TodoSearch } from '../components/TodoSearch/TodoSearch';
+import { TodoList } from '../components/TodoList/TodoList';
+import { TodoItem } from '../components/TodoItem/TodoItem';
+import { CreateTodoButton } from '../components/CreateTodoButton/CreateTodoButton';
 
 function AppUI({
     totalTasks,

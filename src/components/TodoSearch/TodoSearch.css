@@ -4,7 +4,7 @@ nav {
 
 .search-icon {
     position: absolute;
-    background-image: url('../../public/magnifying-glass-solid.svg');
+    background-image: url('../../../public/magnifying-glass-solid.svg');
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: center;
