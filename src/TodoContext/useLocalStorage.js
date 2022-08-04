@@ -23,10 +23,11 @@ function useLocalStorage(itemName, initialValue) {
 
         setItem(parsedItem);
         setLoading(false);
+        //throw new error('ups');
       } catch (e) {
         setError(e)
       }
-    }, 1000)
+    }, 3000)
   });
 
   const saveItem = (newItem) => {

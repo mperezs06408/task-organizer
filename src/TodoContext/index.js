@@ -9,6 +9,7 @@ function TodoProvider(props) {
 
   const [searchValue,
     setSearchValue] = React.useState('');
+  const [openModal, setOpenModal] = React.useState(false);
 
   let searchedTasks = [];
 
@@ -29,6 +30,17 @@ function TodoProvider(props) {
     .filter(task => !!task.completed)
     .length;
   const totalTasks = searchedTasks.length;
+
+  const createTask = (text) => {
+    const newTasks = [...tasks];
+
+    newTasks.push({
+      text,
+      completed:false
+    })
+
+    saveTasks(newTasks)
+  }
 
   const onComplete = (text) => {
     const taskIndex = tasks.findIndex(task => task.text === text);
@@ -56,8 +68,11 @@ function TodoProvider(props) {
       searchValue,
       setSearchValue,
       searchedTasks,
+      createTask,
       onComplete,
-      onDelete
+      onDelete,
+      openModal,
+      setOpenModal
       }}
     >
       {props.children}

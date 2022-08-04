@@ -1,0 +1,66 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--white);
+    width: 320px;
+    height: 420px;
+    border: 1px solid var(--dark-navy);
+    border-radius: 20px;
+}
+
+.form__label {
+    font-size: 1.2rem;
+}
+
+.form__input {
+    width: 280px;
+    height: 60%;
+    resize: none;
+    padding: 10px;
+    border: 1px solid var(--pink);
+    border-radius: 20px;
+    transition: all .5s;
+}
+
+.form__input:focus {
+    box-shadow: 0 0 3px 1px var(--pink);
+}
+
+.form--error{
+    color: #F00;
+    font-weight: 700;
+}
+
+.form__btn--cancel,
+.form__btn--submit {
+    cursor: pointer;
+    color: var(--white);
+    font-size: 1.2rem;
+    width: 140px;
+    height: 30px;
+    border: 1px solid pink;
+}
+
+.form__btn--cancel {
+    background-color: var(--pink);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.form__btn--cancel:hover {
+    color:var(--pink);
+    background-color: var(--white);
+}
+
+.form__btn--submit {
+    background-color: var(--dark-navy);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.form__btn--submit:hover {
+    color: var(--dark-navy);
+    background-color: var(--white);
+}

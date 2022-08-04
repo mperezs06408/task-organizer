@@ -6,12 +6,13 @@
     background-color: var(--white);
     height: 90px;
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    bottom: 20px;
+    right: 20px;
     border-radius: 50%;
     transition: transform .5s;
+    z-index:10;
 }
 
-.btn-add:focus {
-    transform: rotate(90deg);
+.btn-activate {
+    transform: rotate(45deg);
 }

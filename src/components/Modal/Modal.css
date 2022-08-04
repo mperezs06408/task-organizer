@@ -1,0 +1,28 @@
+@keyframes modalAppear {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#modal-card {
+    position: absolute;
+    background-color: var(--dark-navy-vanished);
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .8s ease;
+    animation: modalAppear .5s ease-out;
+}
+
+#modal-card > p {
+    color: var(--white);
+}
