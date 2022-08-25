@@ -1,15 +1,12 @@
-import React, {useContext} from 'react';
-import { TodoContext } from '../../TodoContext';
+import React from 'react';
 import './TodoForm.css';
 
-function TodoForm() {
+function TodoForm({
+    createTask,
+    setOpenModal
+}) {
     const [newTaskValue, setNewTaskValue] = React.useState(''); 
     const [emptyTaskValidation, setEmptyTaskValidation] = React.useState(false);
-
-    const  {
-        createTask,
-        setOpenModal
-    } = useContext(TodoContext);
 
     const handleChange = (e) => {
         if (e.target.value.length == 0) {
