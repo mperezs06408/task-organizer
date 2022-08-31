@@ -6,9 +6,10 @@ function TodoList(props) {
         <section className='section-list'>
             {props.error && props.onError()}
             {props.loading && props.onLoading()}
-            {(!props.loading && !props.error && !props.searchedTasks.length) && props.onEmpty()}
+            {(!props.loading && !props.error && !props.generalTotalTasks) && props.onEmpty()}
+            {(!!props.generalTotalTasks && !props.searchedTasks.length) && props.onEmptySearchResults(props.searchText)}
             <ul className='list'>
-                {props.searchedTasks.map((task, i) => props.render(task, i))}
+                {props.searchedTasks.map(props.render || props.children)}
             </ul>
         </section>
     );

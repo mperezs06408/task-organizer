@@ -28,6 +28,7 @@ function useTodos() {
     .filter(task => !!task.completed)
     .length;
   const totalTasks = searchedTasks.length;
+  const generalTotalTasks = tasks.length;
 
   const createTask = (text) => {
     const newTasks = [...tasks];
@@ -60,6 +61,7 @@ function useTodos() {
       loading,
       error,
       totalTasks,
+      generalTotalTasks,
       completedTasks,
       searchValue,
       setSearchValue,

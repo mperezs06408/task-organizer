@@ -12,6 +12,7 @@ import { Modal } from '../components/Modal';
 import { TodoLoading } from '../components/TodoLoading';
 import { TodoError } from '../components/TodoError';
 import { EmptyTodos } from '../components/EmptyTodos';
+import {EmptySearchTask} from '../components/EmptySearchTask';
 /**Styles */
 import './App.css'
 
@@ -26,6 +27,7 @@ function App() {
     openModal,
     setOpenModal,
     totalTasks, 
+    generalTotalTasks,
     completedTasks,
     searchValue, 
     setSearchValue,
@@ -34,14 +36,18 @@ function App() {
 
   return (
     <React.Fragment>
-      <TodoHeader>
+      <TodoHeader
+        loading={loading}
+      >
         <TodoCounter
           totalTasks={totalTasks}
           completedTasks={completedTasks}
+          // loading={loading} 
         />
         <TodoSearch
           searchValue={searchValue}
           setSearchValue={setSearchValue} 
+          loading={loading}
         />
       </TodoHeader>
 
@@ -49,9 +55,12 @@ function App() {
         error={error}
         loading={loading}
         searchedTasks={searchedTasks}
+        generalTotalTasks={generalTotalTasks}
+        searchText={searchValue}
         onError={() => <TodoError />}
         onLoading={() => <TodoLoading />}
         onEmpty={() => <EmptyTodos />}
+        onEmptySearchResults={(searchText) => <EmptySearchTask searchText={searchText} />}
         render={(task, i) => 
           <TodoItem
             key={i}
@@ -62,14 +71,7 @@ function App() {
           />
         }
       />
-
-      {/* <TodoList>
-        {error && }
-        {loading && }
-        {(!loading && !error && !searchedTasks.length) && }
-
-        {searchedTasks.map((task, i) => ())}
-      </TodoList> */}
+      
       
       {!!openModal && (
         <Modal>
