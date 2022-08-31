@@ -1,0 +1,46 @@
+.syncAlert{
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: var(--dark-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    z-index: 100;
+}
+
+.syncAlert__card{
+    background-color: var(--dark-navy);
+    color: #FFF;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 100px;
+    justify-content: center;
+    border: 1px solid var(--purple);
+    border-radius: .5rem;
+}
+
+.syncAlert__msg{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.syncAlert__btn{
+    background-color: var(--pink);
+    color: var(--dark-navy);
+    font-weight: 700;
+    width: 100%;
+    margin-top: 1rem;
+    line-height: 1.4;
+    transition:all .2s ease;
+}
+
+
+.syncAlert__btn:active {
+    opacity: .5;
+}

@@ -13,6 +13,7 @@ import { TodoLoading } from '../components/TodoLoading';
 import { TodoError } from '../components/TodoError';
 import { EmptyTodos } from '../components/EmptyTodos';
 import {EmptySearchTask} from '../components/EmptySearchTask';
+import { ChangeAlert } from '../components/ChangeAlert';
 /**Styles */
 import './App.css'
 
@@ -31,7 +32,8 @@ function App() {
     completedTasks,
     searchValue, 
     setSearchValue,
-    createTask
+    createTask,
+    syncronizePage,
   } =  useTodos();
 
   return (
@@ -88,6 +90,7 @@ function App() {
         openModal={openModal}
         setOpenModal={setOpenModal}
       />
+      <ChangeAlert syncronizePage={syncronizePage} />
     </React.Fragment>
   );
 }
