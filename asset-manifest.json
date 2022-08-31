@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/task-organizer/static/css/main.f1fc55f5.css",
-    "main.js": "/task-organizer/static/js/main.561dd137.js",
+    "main.css": "/task-organizer/static/css/main.9d18ddf6.css",
+    "main.js": "/task-organizer/static/js/main.abf21028.js",
     "static/media/list-check-solid.svg": "/task-organizer/static/media/list-check-solid.54567493c8bf8538cdf1.svg",
     "static/media/spinner-solid.svg": "/task-organizer/static/media/spinner-solid.344e2e5255fe1d006d43.svg",
     "static/media/trash-can-solid.svg": "/task-organizer/static/media/trash-can-solid.66c3f25b888bf5f88a0f.svg",
+    "static/media/magnifying-glass-plus-solid.svg": "/task-organizer/static/media/magnifying-glass-plus-solid.07ff2b5f7a5acf4fa27c.svg",
     "index.html": "/task-organizer/index.html",
     "static/media/circle-plus-solid.svg": "/task-organizer/static/media/circle-plus-solid.47e4432ab8bc66c608ed.svg",
     "static/media/magnifying-glass-solid.svg": "/task-organizer/static/media/magnifying-glass-solid.69472df91a4309b9461e.svg",
     "static/media/triangle-exclamation-solid.svg": "/task-organizer/static/media/triangle-exclamation-solid.a9453e5001939276eabf.svg",
     "static/media/circle-check-solid.svg": "/task-organizer/static/media/circle-check-solid.bb5e277ee1d8ab97f5d5.svg",
-    "main.f1fc55f5.css.map": "/task-organizer/static/css/main.f1fc55f5.css.map",
-    "main.561dd137.js.map": "/task-organizer/static/js/main.561dd137.js.map"
+    "main.9d18ddf6.css.map": "/task-organizer/static/css/main.9d18ddf6.css.map",
+    "main.abf21028.js.map": "/task-organizer/static/js/main.abf21028.js.map"
   },
   "entrypoints": [
-    "static/css/main.f1fc55f5.css",
-    "static/js/main.561dd137.js"
+    "static/css/main.9d18ddf6.css",
+    "static/js/main.abf21028.js"
   ]
 }
