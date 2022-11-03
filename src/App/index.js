@@ -19,22 +19,27 @@ import './App.css'
 
 
 function App() {
+  const {states, methods} = useTodos();
+
   const {
     error,
     loading,
     searchedTasks,
-    onComplete,
-    onDelete,
     openModal,
-    setOpenModal,
     totalTasks, 
     generalTotalTasks,
     completedTasks,
     searchValue, 
-    setSearchValue,
-    createTask,
+    createTask
+  } = states;
+
+  const {
     syncronizePage,
-  } =  useTodos();
+    onComplete,
+    onDelete,
+    setSearchValue,
+    setOpenModal,
+  } =  methods;
 
   return (
 

@@ -57,22 +57,30 @@ function useTodos() {
     saveTasks(newTasks)
   }
 
-  return {
+  const states = {
       loading,
       error,
       totalTasks,
       generalTotalTasks,
       completedTasks,
       searchValue,
-      setSearchValue,
       searchedTasks,
       createTask,
+      openModal,
+  }
+
+  const methods = {
+      setSearchValue,
       onComplete,
       onDelete,
-      openModal,
       setOpenModal,
       syncronizePage
-      };
+  }
+
+  return {
+    states,
+    methods
+  };
 }
 
 export { useTodos };
